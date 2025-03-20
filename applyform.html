@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+           body {
+            background-color: #f2f2f2;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #3ea5d5;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .container {
+            margin: auto;
+            background-image: linear-gradient(#a0c7da, white);
+            box-shadow:20px -19px 8px rgb(0 0 0 / 24%);
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 30px;
+            margin-top: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+       
+        
+        .or-text {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #888;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .forgot-password {
+            font-size: 14px;
+            color: #4285F4;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .submit {
+            background-color: #3ea5d5;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit:hover{
+            background-color: #3ea5d5;
+        }
+        input[type="submit"] {
+    width: 100%;
+    background-color: #82d1f1;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+      
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #3ea5d5;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+}
+
+button:hover {
+    background-color: #3ea5d5; 
+}
+
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 3px 3px rgba(0, 116, 217, 0.5); 
+}
+
+        .container {
+            margin: auto;
+            background-image: linear-gradient(#a0c7da, white);
+            box-shadow:20px -19px 8px rgb(0 0 0 / 24%);
+            width: 80%;
+            max-width: 500px; 
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 30px;
+            margin-top: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+       
+        
+        .or-text {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #888;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .forgot-password {
+            font-size: 14px;
+            color: #4285F4;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .submit {
+            background-color: #3ea5d5;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit:hover{
+            background-color: #3ea5d5;
+        }
+        input[type="submit"] {
+    width: 100%;
+    background-color: #82d1f1;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+      
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #3ea5d5;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+}
+
+button:hover {
+    background-color: #3ea5d5;
+}
+
+button:focus {
+    outline: none; 
+    box-shadow: 0 0 3px 3px rgba(0, 116, 217, 0.5);
+}
+
+.view-job-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+    </style>
+</head>
+
+<body>
+<header>
+     <div id="google_translate_element" align="left"></div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+        <img id="logo" src="Banasthali_Vidyapeeth_Logo.png" alt="Logo">
+    </header>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form action="applyform.jsp" method="post" enctype="multipart/form-data">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="jobid">JobID:</label>
+            <input type="text" id="jobid" name="jobid" required>
+
+           
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" required>
+
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" required>
+
+            <label for="experience">Experience:</label>
+            <input type="text" id="experience" name="experience" required>
+
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            <label for="resume">Attach Resume if applying for teaching courses:</label>
+            <label for="resume">Resume (PDF, DOC, DOCX):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

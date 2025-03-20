@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Job Seeker</title>
+    <style>
+        
+       header {
+            padding: 20px;
+            background-color: #3ea5d5;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            width: 120px;
+            
+            display: block;
+            margin: 0 auto;
+        }
+         body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            
+            margin: 0 auto;
+            width: 300px;
+            max-width: 500px; 
+            padding: 20px;
+            background-image: linear-gradient(#a0c7da, white);
+            box-shadow:20px -19px 8px rgb(0 0 0 / 24%);
+           
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+     
+       
+         button[type="submit"] {
+            width: 100%;
+            background-color:#3ea5d5;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+</style>
+
+         
+    
+   
+</head>
+<body>
+    <header>
+    <div id="google_translate_element" align="left"></div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+    <img id="logo" src="Banasthali_Vidyapeeth_Logo.png" alt="Logo">
+    </header>
+    
+    <div class="container">
+        <h2>View Job Seeker</h2>
+        <form action="fetchJobSeeker.jsp" method="GET">
+            <label for="email">Enter Job Seeker Email:</label>
+            <input type="text" id="email" name="email" required>
+            <button type="submit">Search</button>
+        </form>
+         <a href="jobseekerhome.jsp" style="text-decoration: none; color: #0074D9; display: block; margin-bottom: 10px;"> Back to Home</a>
+    </div>
+</body>
+</html>

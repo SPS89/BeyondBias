@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+   
+        <style>
+       body {
+            background-color: #f2f2f2;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #3ea5d5;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .container {
+            margin: auto;
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            background-image: linear-gradient(#a0c7da, white);
+            box-shadow:20px -19px 8px rgb(0 0 0 / 24%);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+          h1 {
+            margin-top: 0;
+            color:black;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 30px;
+            margin-top: 30px;
+            background-image: linear-gradient(#a0c7da, white);
+            box-shadow:20px -19px 8px rgb(0 0 0 / 24%);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input[type="submit"]{
+            width:100%;
+            background-color:#3ea5d5;
+           color: white;
+    font-weight: bold;
+            padding:10px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        
+        .or-text {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #888;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .forgot-password {
+            font-size: 14px;
+            color: #3ea5d5;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .submit {
+            background-color: #3ea5d5;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit:hover{
+            background-color: #3ea5d5;
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div id="google_translate_element" align="left"></div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+        <img id="logo" src="Banasthali_Vidyapeeth_Logo.png" alt="Logo">
+    </header>
+    <div class="container">
+         <a href="homejobporatl.html" style="text-decoration: none; color: #0074D9; display: block; margin-bottom: 10px;"> Back to Home</a>
+        <div class="box">
+            <h1>Employee Login Form</h1>
+            <h2>Ready to take the next step</h2>
+            <a  href="emps.html" style="text-decoration: none; color: #0074D9; display: block; margin-bottom: 10px;" align="center" ><p>Create an account or sign in.</p></a>
+
+           
+
+            <p class="or-text">Or</p>
+
+            <form action="emplog.jsp"method="post">
+                <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required><br>
+
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="forgotPasswordLink" style="text-decoration: none; color: #0074D9; display: block; margin-bottom: 10px;" align="center"  >
+                <a  href="security.html">Forgot Password?</a>
+                </label>
+                <input type="submit" value="Login"><br>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

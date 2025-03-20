@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Job Seeker Profile</title>
+    <style>
+        
+          body {
+    background-color: #f2f2f2;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+}
+         header {
+            padding: 20px;
+            background-color: #3ea5d5;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            width: 120px;
+            height: auto;
+        }
+        h2{
+            color: #1e5783;
+        }
+
+        .container {
+            
+            margin: auto;
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            background-image: linear-gradient(#a0c7da, white);
+            box-shadow:20px -19px 8px rgb(0 0 0 / 24%);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .or-text {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #888;
+        }
+       .box {
+            border: 1px solid #ccc;
+            padding: 30px;
+            margin-top: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .forgot-password {
+            font-size: 14px;
+            color: #4285F4;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .submit {
+            background-color: #3ea5d5;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit:hover{
+            background-color: #3ea5d5;
+        }
+        input[type="submit"] {
+    width: 100%;
+    background-color: #82d1f1;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+      
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #3ea5d5;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%; 
+}
+
+button:hover {
+    background-color: #3ea5d5; 
+}
+
+
+button:focus {
+    outline: none; 
+    box-shadow: 0 0 3px 3px rgba(0, 116, 217, 0.5); 
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="google_translate_element" align="left"></div>
+        
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+        <img id="logo" src="Banasthali_Vidyapeeth_Logo.png" alt="Logo">
+    </header>
+    <div class="container">
+       
+       
+
+        <a href="jobseekerhome.jsp" style="text-decoration: none; color: #0074D9; display: block; margin-bottom: 10px;"> Back to Home</a>
+             <h2>Create Job Seeker Profile</h2>
+        <form action="CJobSeekerProfile.jsp" method="post">
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="dob">Date of Birth:</label>
+            <!-- Use input type="date" for the Date of Birth field -->
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+             <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="skill">Skills:</label>
+            <input type="text" id="skill" name="skill" required>
+
+            <label for="experience">Experience:</label>
+            <input type="text" id="experience" name="experience" required>
+
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" required>
+
+            <label for="shift">Shift:</label>
+            <!-- Use a dropdown (select) box for the Shift field -->
+            <select id="shift" name="shift" required>
+                <option value="" disabled selected>Select category</option>
+                <option value="Day Shift">Day Shift</option>
+                <option value="Night Shift">Night Shift</option>
+            </select><br>
+             
+            <div class="button-container">
+             <button type="submit">Create Profile</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

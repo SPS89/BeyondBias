@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reset Password</title>
+    <style>
+          body {
+            background-color: #f2f2f2;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+         header {
+            padding: 20px;
+            background-color: #3ea5d5;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            width: 120px;
+            height: auto;
+        }
+        header {
+            padding: 20px;
+            background-color: #3ea5d5;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .container {
+            margin: auto;
+            width: 80%;
+            max-width: 500px; 
+            padding: 20px;
+            background-image: linear-gradient(#a0c7da, white);
+            box-shadow:20px -19px 8px rgb(0 0 0 / 24%);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 30px;
+            margin-top: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+       
+        
+        .or-text {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #888;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .forgot-password {
+            font-size: 14px;
+            color: #4285F4;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .submit {
+            background-color: #3ea5d5;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit:hover{
+            background-color: #338ab2;
+        }
+        input[type="submit"] {
+    width: 100%;
+    background-color: #3ea5d5;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <div id="google_translate_element" align="left"></div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+    <img id="logo" src="Banasthali_Vidyapeeth_Logo.png" alt="Logo">
+    </header>
+<div class="container">
+    <h2>Reset Password</h2>
+    <form action="reset.jsp" method="post">
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required><br>
+        
+        <input type="submit" value="Reset Password">
+    </form>
+</div>
+
+</body>
+</html>
